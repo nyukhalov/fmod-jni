@@ -1,4 +1,4 @@
-package org.fmod.lowlevel;
+package org.fmod.core;
 
 import org.fmod.jni.SWIGTYPE_p_FMOD_SOUNDGROUP;
 

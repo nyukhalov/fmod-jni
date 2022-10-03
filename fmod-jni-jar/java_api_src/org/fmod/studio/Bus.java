@@ -1,8 +1,8 @@
 package org.fmod.studio;
 
 import org.fmod.jni.*;
-import org.fmod.lowlevel.ChannelGroup;
-import org.fmod.lowlevel.FMODResultTracker;
+import org.fmod.core.ChannelGroup;
+import org.fmod.core.FMODResultTracker;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Objects;

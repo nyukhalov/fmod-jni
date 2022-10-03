@@ -1,4 +1,4 @@
-package org.fmod.lowlevel;
+package org.fmod.core;
 
 import org.fmod.jni.*;
 
@@ -51,7 +51,8 @@ public class FmodSystem extends FMODResultTracker {
 
 	public static FmodSystem create() {
 		SWIGTYPE_p_p_FMOD_SYSTEM pp = new_FMOD_SYSTEM_p_p();
-		FMOD_RESULT result = FMOD_System_Create(pp);
+		// the version is defined in fmod_common.h
+		FMOD_RESULT result = FMOD_System_Create(pp, 0x00020209);
 		final FmodSystem system = new FmodSystem(FMOD_SYSTEM_p_p_value(pp));
 		system.processApiResult(result, "System.create");
 		delete_FMOD_SYSTEM_p_p(pp);

@@ -5,11 +5,11 @@ set(CMAKE_C_STANDARD 99)
 
 
 
-set(JAVA_HOME /usr/java/jdk1.8.0_201)
+set(JAVA_HOME /usr/lib/jvm/java-17-openjdk)
 set(FMOD_API ../fmod_api)
 
 
-include_directories(${JAVA_HOME}/include ${JAVA_HOME}/include/linux ${FMOD_API}/lowlevel/inc ${FMOD_API}/studio/inc)
+include_directories(${JAVA_HOME}/include ${JAVA_HOME}/include/linux ${FMOD_API}/core/inc ${FMOD_API}/studio/inc)
 
 add_library(fmodJNI SHARED ../c_jni_wrapper/fmod_wrap.c)
 

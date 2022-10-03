@@ -1,4 +1,5 @@
 nativeSwigWrapperLibraries/fmod_api/*
+nativeSwigWrapperLibraries/linux_clion/build/
 
 .idea/workspace.xml
 demo/working/fmod_example_media/
@@ -18,8 +19,8 @@ fmod-jni.properties
 /fmod_runtimes/fmodstudio64.dll
 /fmod_runtimes/libfmod.dylib
 /fmod_runtimes/libfmodstudio.dylib
-/fmod_runtimes/libfmod.so
-/fmod_runtimes/libfmodstudio.so
+/fmod_runtimes/_libfmod11012.so
+/fmod_runtimes/_libfmodstudio11012.so
 out/
 nativeSwigWrapperLibraries/windows_VisualStudio/x64/*
 nativeSwigWrapperLibraries/windows_VisualStudio/Debug/*

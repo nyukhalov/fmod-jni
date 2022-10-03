@@ -16,7 +16,7 @@
 		0A6261DD2253C4FE00F252B5 /* libfmodstudio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmodstudio.dylib; path = ../../fmod_api/studio/lib/libfmodstudio.dylib; sourceTree = "<group>"; };
 		4311B4CF1D0C6EB30032E022 /* libfmodJNI.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libfmodJNI.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		4311B4D61D0C6FA40032E022 /* fmod_wrap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fmod_wrap.c; path = ../../c_jni_wrapper/fmod_wrap.c; sourceTree = "<group>"; };
-		4311B4DA1D0C80ED0032E022 /* libfmod.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmod.dylib; path = ../../fmod_api/lowlevel/lib/libfmod.dylib; sourceTree = "<group>"; };
+		4311B4DA1D0C80ED0032E022 /* libfmod.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmod.dylib; path = ../../fmod_api/core/lib/libfmod.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,12 +238,12 @@
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = "";
 				LIBRARY_SEARCH_PATHS = (
-					../../fmod_api/lowlevel/lib,
+					../../fmod_api/core/lib,
 					../../fmod_api/studio/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = /Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/include;
-				USER_HEADER_SEARCH_PATHS = "../../fmod_api/lowlevel/inc ../../fmod_api/studio/inc /Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/include /Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/include/darwin";
+				USER_HEADER_SEARCH_PATHS = "../../fmod_api/core/inc ../../fmod_api/studio/inc /Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/include /Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/include/darwin";
 			};
 			name = Debug;
 		};
@@ -258,16 +258,16 @@
 				"HEADER_SEARCH_PATHS[arch=*]" = (
 					/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/include,
 					/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/include/darwin,
-					../../fmod_api/lowlevel/inc,
+					../../fmod_api/core/inc,
 					../../fmod_api/studio/inc,
 				);
 				LIBRARY_SEARCH_PATHS = (
-					../../fmod_api/lowlevel/lib,
+					../../fmod_api/core/lib,
 					../../fmod_api/studio/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = /Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/include;
-				USER_HEADER_SEARCH_PATHS = "../../fmod_api/lowlevel/inc ../../fmod_api/studio/inc /Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/include /Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/include/darwin";
+				USER_HEADER_SEARCH_PATHS = "../../fmod_api/core/inc ../../fmod_api/studio/inc /Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/include /Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/include/darwin";
 			};
 			name = Release;
 		};

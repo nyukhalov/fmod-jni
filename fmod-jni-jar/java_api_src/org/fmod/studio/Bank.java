@@ -1,7 +1,7 @@
 package org.fmod.studio;
 
 import org.fmod.jni.SWIGTYPE_p_FMOD_STUDIO_BANK;
-import org.fmod.lowlevel.FMODResultTracker;
+import org.fmod.core.FMODResultTracker;
 
 import static org.fmod.jni.FMOD.*;
 

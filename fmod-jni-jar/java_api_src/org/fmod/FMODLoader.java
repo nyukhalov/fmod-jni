@@ -1,8 +1,5 @@
 package org.fmod;
 
-import com.sun.istack.internal.Nullable;
-import com.sun.xml.internal.ws.util.StreamUtils;
-
 import java.io.*;
 import java.util.zip.CRC32;
 
@@ -154,7 +151,7 @@ public class FMODLoader {
 		return false;
 	}
 	
-	private static @Nullable Throwable tryLoad(String sharedLibName, String sourceCrc, File file) {
+	private static Throwable tryLoad(String sharedLibName, String sourceCrc, File file) {
 		
 		try {
 			String path = extractLibrary(sharedLibName, sourceCrc, file);
